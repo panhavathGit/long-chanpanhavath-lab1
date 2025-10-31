@@ -2,9 +2,9 @@ name: Node.js CI (npm)  # ← Workflow name updated for npm
 
 on:
   push:
-    branches: [ main ]  # ← Runs when you push to main
+    branches: [ master ]  # ← Runs when you push to main
   pull_request:
-    branches: [ main ]  # ← Runs when a pull request targets main
+    branches: [ master ]  # ← Runs when a pull request targets main
 
 jobs:
   build-and-test:
