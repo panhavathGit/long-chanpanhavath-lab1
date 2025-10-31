@@ -7,6 +7,6 @@ describe('GET /', () => {
     const res = await request(app).get('/');
     expect(res.status).to.equal(200);
     // expect(res.text).to.equal('Hello, GitHub Actions!');
-    expect(res.text).to.equal('Hello, CI/CD!!');
+    expect(res.text).to.equal('Hello, CI/CD!!!');
     });
 });
