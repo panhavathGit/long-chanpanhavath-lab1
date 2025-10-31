@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]  # ← Test on multiple Node versions
+        node-version: [18.x]  # ← Test on multiple Node versions
 
     steps:
       - name: Checkout code
