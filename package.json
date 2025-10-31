@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha --exit",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "test:coverage": "nyc mocha --exit"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "chai": "^4.5.0",
-    "eslint": "^8.57.1"
+    "eslint": "^8.57.1",
+    "nyc": "^17.1.0"
   }
 }
