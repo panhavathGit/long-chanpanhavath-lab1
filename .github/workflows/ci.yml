@@ -30,10 +30,6 @@ jobs:
       - name: Lint code
         run: npm run lint  # ← Runs your "lint" script in package.json
 
-      # Original step before add code coverage
-      # - name: Run tests
-      #   run: npm test  # ← Runs your "test" script in package.json
-
       - name: Run tests with coverage
         run: npm run test:coverage
       
