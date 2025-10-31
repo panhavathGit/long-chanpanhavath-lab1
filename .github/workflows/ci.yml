@@ -29,7 +29,8 @@ jobs:
 
       - name: Lint code
         run: npm run lint  # ← Runs your "lint" script in package.json
-
+      
+      # Code Coverage
       - name: Run tests with coverage
         run: npm run test:coverage
       
@@ -38,3 +39,10 @@ jobs:
         with:
           name: coverage-report
           path: coverage/  # ← Downloadable after workflow finishes
+
+      # Vercel deployment
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --confirm
